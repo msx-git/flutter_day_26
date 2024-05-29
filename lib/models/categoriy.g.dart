@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'category.dart';
+part of 'categoriy.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Category _$CategoryFromJson(Map<String, dynamic> json) => Category(
+Categoriy _$CategoriyFromJson(Map<String, dynamic> json) => Categoriy(
       id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       image: json['image'] as String,
@@ -14,7 +14,7 @@ Category _$CategoryFromJson(Map<String, dynamic> json) => Category(
       updatedAt: json['updatedAt'] as String,
     );
 
-Map<String, dynamic> _$CategoryToJson(Category instance) => <String, dynamic>{
+Map<String, dynamic> _$CategoriyToJson(Categoriy instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'image': instance.image,
