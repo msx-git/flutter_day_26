@@ -7,15 +7,15 @@ import '../models/product.dart';
 class ProductsHttpService {
   Future<List<Product>> fetchProducts() async {
     Uri url = Uri.parse(
-        "https://flutter-day-26-default-rtdb.firebaseio.com/products.json");
+        "https://api.escuelajs.co/api/v1/products");
 
     final response = await http.get(url);
     final data = jsonDecode(response.body);
     final List<Product> loadedProducts = [];
     if (data != null) {
-      data.forEach((key, value) {
-        loadedProducts.add(Product.fromJson(value));
-      });
+     for(var product in data){
+       loadedProducts.add(Product.fromJson(product));
+     }
     }
     return loadedProducts;
   }
